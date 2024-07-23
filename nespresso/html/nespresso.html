@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/portfolio/nespresso/img/logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>nespresso_pc</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <link rel="stylesheet" href="/portfolio/nespresso/css/nespresso_pc.css">
+    <link rel="stylesheet" media="all and (max-width:1429px)" href="/portfolio/nespresso/css/nespresso_tab.css">
+    <link rel="stylesheet" media="all and (max-width:767px)" href="/portfolio/nespresso/css/nespresso_mobile.css">
+</head>
+
+<body>
+    <section class="sec01">
+        <h2>섹션01</h2>
+        <div class="header">
+            <img src="/portfolio/nespresso/img/logo_crop.png" alt="logo">
+            <i class="fa-solid fa-bars hamburger" onclick="toggleMenu()"></i>
+            <div class="accordion">
+                <input type="checkbox" id="menu01">
+                <label for="menu01">COFFEE</label>
+                <div>
+                    <span>버츄오</span>
+                    <span>오리지널</span>
+                    <span>정기 주문</span>
+                </div>
+                <input type="checkbox" id="menu02">
+                <label for="menu02">MACHINE</label>
+                <div>
+                    <span>버츄오</span>
+                    <span>오리지널</span>
+                    <span>페이백 신청</span>
+                </div>
+                <input type="checkbox" id="menu03">
+                <label for="menu03">ACC</label>
+                <div>
+                    <span>우유 거품기</span>
+                    <span>푸드&바이트</span>
+                    <span>머신 부속품</span>
+                    <span>재활용 백</span>
+                </div>
+                <div class="onedepth">PROMOTION</div>
+                <div class="onedepth">FOR CLUB</div>
+                <div class="onedepth">SIGN IN</div>
+                <i class="fa-solid fa-xmark menuClose" onclick="closeMenu()"></i>
+            </div>
+            <div class="menuSet">
+                <div class="mainMenu">
+                    <div class="menuItem">COFFEE</div>
+                    <ul class="subMenu">
+                        <li>버츄오</li>
+                        <li>오리지널</li>
+                        <li>정기 주문</li>
+                    </ul>
+                </div>
+                <div class="mainMenu">
+                    <div class="menuItem">MACHINE</div>
+                    <ul class="subMenu">
+                        <li>버츄오</li>
+                        <li>오리지널</li>
+                        <li>페이백 신청</li>
+                    </ul>
+                </div>
+                <div class="mainMenu">
+                    <div class="menuItem">ACC</div>
+                    <ul class="subMenu">
+                        <li>우유 거품기</li>
+                        <li>푸드&바이트</li>
+                        <li>머신 부속품</li>
+                        <li>재활용 백</li>
+                    </ul>
+                </div>
+                <div class="mainMenu">PROMOTION</div>
+                <div class="mainMenu">FOR CLUB</div>
+                <div class="mainMenu">SIGN IN</div>
+            </div>
+        </div>
+        <div class="mainCarousel">
+            <!-- Swiper -->
+            <div class="swiper main">
+                <div class="swiper-wrapper">
+                    <!-- swiper 커스텀시에는 nth-child 말고 클래스명으로 활용하기 -->
+                    <div class="swiper-slide one">
+                        <div class="slideText">
+                            <p>집에서 만나는 황금비율 에스프레소 한 잔</p>
+                            <p>네스프레소 100% 페이백으로 알아보기</p>
+                            <a href="#" class="slideButton">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <!-- <img src="/nespresso/img/capsule01.jpg" alt="slide02"> -->
+                        <div class="slideText">
+                            <p>환경을 생각하는 네스프레소의 마음</p>
+                            <p>알루이늄 캡슐에 담긴 비밀이 궁금하신가요?</p>
+                            <a href="#" class="slideButton">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide three">
+                        <!-- <img src="/nespresso/img/maplepecan02.jpeg" alt="slide03"> -->
+                        <div class="slideText">
+                            <p>봄과 함께 찾아온 새로운 원두 향기</p>
+                            <p>달콤한 메이플 피칸향 커피를 만나 보세요</p>
+                            <a href="#" class="slideButton">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide four">
+                        <!-- <img src="/nespresso/img/coffeebean.jpg" alt="slide04"> -->
+                        <div class="slideText">
+                            <p>우리가 사랑하는 커피를 계속 지켜요</p>
+                            <p>재생 농업을 위한 네스프레소의 여정</p>
+                            <a href="#" class="slideButton">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec02">
+        <div class="newArrived">
+            <div class="newHeader">
+                <h2>NEW ARRIVED</h2>
+                <p>봄바람을 타고 온 시즌 한정 커피</p>
+            </div>
+            <div class="new_mobile">
+                <div class="maple_mobile">
+                    <img src="/portfolio/nespresso/img/maple_mo.png" alt="메이플 모바일">
+                    <div class="newInfo">
+                        <h4>메이플 피칸향 커피</h4>
+                        <p>
+                            달콤한 봄에 어울리는 한 모금을 만나 보세요
+                            <span>더 알아보기</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="infinimant_mobile">
+                    <img src="/portfolio/nespresso/img/infinimant_mo.png" alt="인피니망 모바일">
+                    <div class="newInfo">
+                        <h4>인피니망 프뤼테</h4>
+                        <p>
+                            파티세리 명장 피에르 에르메의 라즈베리향 커피
+                            <span>더 알아보기</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="infinimant">
+                <div class="capsule">
+                    <img src="/portfolio/nespresso/img/infinimantCapsule.png" alt="인피니망 프뤼테 캡슐">
+                    <p class="origin capsuleText">인피니망 프뤼테</p>
+                    <p class="hover capsuleText">파티쉐리 명장의 손길</p>
+                </div>
+                <div class="capsuleInfo">
+                    <p class="origin capsuleInfo">많은 사랑을 받았던 피에르 에르메 에디션 재 출시!<br>파티셰리 명장과 네스프레소의 만남을<br>특별한 한정 기획으로 만나
+                        보세요</p>
+                    <div class="hover capsuleInfo">
+                        <div>
+                            <span class="infoBold size">커피 사이즈</span>
+                            <span>머그(230ml)</span>
+                        </div>
+                        <div>
+                            <span class="infoBold aroma">아로마</span>
+                            <span>라즈베리향</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maplePecan">
+                <div class="capsule">
+                    <img src="/portfolio/nespresso/img/maplePecanCapsule.png" alt="메이플 피칸 캡슐">
+                    <p class="origin capsuleText">메이플 피칸향 커피</p>
+                    <p class="hover capsuleText">달콤한 봄의 선물</p>
+                </div>
+                <div class="capsuleInfo">
+                    <p class="origin capsuleInfo">비스킷향을 선사하는 부드러운 아라비카 원두에<br>캐러멜 처럼 달콤한 메이플 시럽과 고소한 피칸향이<br>조화롭게 어우러지는
+                        봄의 선물</p>
+                    <div class="hover capsuleInfo">
+                        <div>
+                            <span class="infoBold size">커피 사이즈</span>
+                            <span>머그(230ml)</span>
+                        </div>
+                        <div>
+                            <span class="infoBold aroma">아로마</span>
+                            <span>메이플 시럽, 피칸</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec03">
+        <div class="best">
+            <div class="bestHeader">
+                <h2>BEST</h2>
+                <p>네스프레소의 베스트 상품</p>
+            </div>
+            <div class="bestSlideSet">
+                <div class="bestWrap">
+                    <div>
+                        <input type="radio" name="bestTab" id="tab01" checked>
+                        <label for="tab01">머신</label>
+                        <!-- <div>머신 아이템</div> -->
+                        <div class="swiper bestItem machine">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide best01">
+                                    <img src="/portfolio/nespresso/img/vertuo_plus.png" alt="버츄오 플러스 화이트">
+                                    <p>버츄오 플러스 화이트</p>
+                                    <div class="itemInfo">
+                                        <p>299,000원</p>
+                                        <p>239,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best02">
+                                    <img src="/portfolio/nespresso/img/vertuo_set.png" alt="버츄오 팝 스타터 팩">
+                                    <p>버츄오 팝 스타터 팩</p>
+                                    <div class="itemInfo">
+                                        <p>272,440원</p>
+                                        <p>212,440원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best03">
+                                    <img src="/portfolio/nespresso/img/air_set.png" alt="버츄오 팝&에어로치노">
+                                    <p>버츄오 팝 & 에어로치노 4</p>
+                                    <div class="itemInfo">
+                                        <p>339,000원</p>
+                                        <p>229,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best04">
+                                    <img src="/portfolio/nespresso/img/c61.png" alt="픽시 타이탄">
+                                    <p>픽시 C61 타이탄</p>
+                                    <div class="itemInfo">
+                                        <p>249,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best05">
+                                    <img src="/portfolio/nespresso/img/citiz.png" alt="시티즈 플래티넘">
+                                    <p>시티즈 플래티넘 D</p>
+                                    <div class="itemInfo">
+                                        <p>349,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" name="bestTab" id="tab02">
+                        <label for="tab02">커피</label>
+                        <div class="swiper bestItem coffee">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide best01">
+                                    <img src="/portfolio/nespresso/img/altissio.png" alt="알티시오">
+                                    <p>알티시오</p>
+                                    <p>
+                                        <span>강도 9</span>
+                                        <span>산미 1</span>
+                                    </p>
+                                    <p>풍부한 바디감의 코코아향</p>
+                                    <div class="itemInfo">
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best02">
+                                    <img src="/portfolio/nespresso/img/double_espresso_dolce.png" alt="더블 에스프레소 돌체">
+                                    <p>더블 에스프레소 돌체</p>
+                                    <p>
+                                        <span>강도 5</span>
+                                        <span>산미 2</span>
+                                    </p>
+                                    <p>부드럽고 달콤한 곡물향</p>
+                                    <div class="itemInfo">
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best03">
+                                    <img src="/portfolio/nespresso/img/costa_rica.png" alt="코스타리카">
+                                    <p>코스타리카</p>
+                                    <p>
+                                        <span>강도 7</span>
+                                        <span>산미 1</span>
+                                    </p>
+                                    <p>온천수 가공의 맥아향</p>
+                                    <div class="itemInfo">
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best04">
+                                    <img src="/portfolio/nespresso/img/mexico.png" alt="멕시코">
+                                    <p>멕시코</p>
+                                    <p>
+                                        <span>강도 7</span>
+                                        <span>산미 1</span>
+                                    </p>
+                                    <p>이중 습식 가공의 우디향</p>
+                                    <div class="itemInfo">
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best05">
+                                    <img src="/portfolio/nespresso/img/double_espresso_chiaro.png" alt="더블 에스프레소 키아로">
+                                    <p>더블 에스프레소 키아로</p>
+                                    <p>
+                                        <span>강도 7</span>
+                                        <span>산미 1</span>
+                                    </p>
+                                    <p>진하고 와일드한 풍미</p>
+                                    <div class="itemInfo">
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="radio" name="bestTab" id="tab03">
+                        <label for="tab03">악세사리</label>
+                        <div class="swiper bestItem">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide best01">
+                                    <img src="/portfolio/nespresso/img/vertuo_mug_set.png" alt="버츄오 머그 컵 세트">
+                                    <p>버츄오 머그 컵 세트</p>
+                                    <div class="itemInfo">
+                                        <p>239,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best02">
+                                    <img src="/portfolio/nespresso/img/capsule_station.png" alt="캡슐 스테이션">
+                                    <p>네스프레소 캡슐 스테이션</p>
+                                    <div class="itemInfo">
+                                        <p>89,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best03">
+                                    <img src="/portfolio/nespresso/img/lume_dispensor.png" alt="루메 미아 디스펜서">
+                                    <p>루메 미아 디스펜서</p>
+                                    <div class="itemInfo">
+                                        <p>46,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best04">
+                                    <img src="/portfolio/nespresso/img/festive_mug.png" alt="페스티브 커피 머그">
+                                    <p>페스티브 커피 머그</p>
+                                    <div class="itemInfo">
+                                        <p>39,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide best05">
+                                    <img src="/portfolio/nespresso/img/nomad.png" alt="시티즈 플래티넘">
+                                    <p>노마드 트래블 머그 S</p>
+                                    <div class="itemInfo">
+                                        <p>30,000원</p>
+                                        <button>장바구니 담기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- <div>머신</div>
+                    <div>커피</div>
+                    <div>악세사리</div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec04">
+        <div class="longBanner">
+            <div class="bannerText">
+                <h2>다양한 이야기, 하나의 목표</h2>
+                <p>네스프레소와 함께 하는 세 농부들의 이야기를 만나 보세요</p>
+                <a href="#">바로 가기</a>
+            </div>
+        </div>
+    </section>
+    <section class="sec05">
+        <div class="choi">
+            <div class="choiHeader">
+                <h2>최인아 책방<span>x</span>네스프레소</h2>
+                <p>매달 최인아 책방과 함께 커피에 어울리는 책을 골라 소개합니다.</p>
+                <p>커피 한 잔을 마시며 마치 저자와 깊은 대화를 나누는 듯한 순간으로 초대할게요.</p>
+            </div>
+            <div class="swiper collabo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mar">
+                        <img src="/portfolio/nespresso/img/mar.png" alt="최인아 3월">
+                        <div class="monthTitle">
+                            <h3>3월 '고통 없는 사랑은 없다'</h3>
+                            <p>고통에 대한 다른 시각을 전해주는 3월의 책<br>
+                                알티시오 디카페나토의 풍부하고 진한 바디감을 얹어요</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feb">
+                        <img src="/portfolio/nespresso/img/feb.png" alt="최인아 2월">
+                        <div class="monthTitle">
+                            <h3>2월 '파친코'</h3>
+                            <p>디아볼리토의 강렬함과 함께<br>
+                                인간의 강인한 생존력이 주는 감동을 한층 더 느껴보세요</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide jan">
+                        <img src="/portfolio/nespresso/img/jan.png" alt="최인아 1월">
+                        <div class="monthTitle">
+                            <h3>1월 ‘시대예보 : 핵개인의 시대'</h3>
+                            <p>핵개인의 시대 속에 다정함을 찾는 우리의 마음과 닮은<br>
+                                비앙코 피콜로 포 밀크를 즐겨 보세요</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dec">
+                        <img src="/portfolio/nespresso/img/dec.png" alt="최인아 12월">
+                        <div class="monthTitle">
+                            <h3>12월 ‘먼 북소리'</h3>
+                            <p>나를 찾아가는 여정에 가장 잘 어울리는<br>
+                                코스타리카 커피와 함께 여행에세이를 즐겨 볼까요?</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide nov">
+                        <img src="/portfolio/nespresso/img/nov.png" alt="최인아 11월">
+                        <div class="monthTitle">
+                            <h3>11월 ‘밤에 우리 영혼은'</h3>
+                            <p>멕시코의 강렬함을 닮은 소설 속 애디&루이스의<br>
+                                이야기를 읽고 행복한 삶을 여는 여정을 옅봐요</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide oct">
+                        <img src="/portfolio/nespresso/img/oct.png" alt="최인아 10월">
+                        <div class="monthTitle">
+                            <h3>10월 '재즈의 계절'</h3>
+                            <p>가을의 정취와 어울리는 재즈를 닮은<br>
+                                에티오피아 커피와 김민주의 에세이를 함께 즐겨 봐요</p>
+                            <a href="#">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec06">
+        <div class="additionalFrame">
+            <div class="additional kakao">
+                <i class="fa-regular fa-bell"></i>
+                <h3>카카오톡 채널 추가</h3>
+                <p>네스프레소 카카오톡 채널에서<br>
+                    쏟아지는 쿠폰 혜택!</p>
+                <a href="#">카카오톡 바로가기</a>
+            </div>
+            <div class="additional gift">
+                <i class="fa-solid fa-gift"></i>
+                <h3>웰컴 기프트</h3>
+                <p>신규 네스프레소 회원을 위한<br>
+                    특별한 선물!</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="additional recycle">
+                <i class="fa-solid fa-recycle"></i>
+                <h3>캡슐 재활용</h3>
+                <p>재활용 백 수거에 대해<br>
+                    궁금하시다면?</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="additional afterService">
+                <i class="fa-solid fa-toolbox"></i>
+                <h3>머신 기술 지원</h3>
+                <p>머신 사용법과 문제 해결,<br>
+                    A/S정보가 필요하신가요?</p>
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerRow">
+            <div class="socialGroup">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="pageTop">
+                <p>페이지 상단으로 이동하기</p>
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <div class="copyright">
+                <img src="/portfolio/nespresso/img/nes_logo_bottom.png" alt="네스프레소 하단 로고">
+                <p>Nestlé Nespresso S.A. 2024</p>
+            </div>
+        </div>
+        <div class="bottomTab">
+            <ul class="footerKR">
+                <li>상호 : 네슬레코리아 유한책임회사</li>
+                <li>대표자 : 토마스 제프리카소</li>
+                <li>사업자등록번호 : 110-86-10100</li>
+                <li>
+                    <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=1108610100"
+                        target="_blank">통신판매업신고 : 2014-서울서대문-0247</a>
+                </li>
+                <li>
+                    <a href="#">채무지급보증안내</a>
+                </li>
+                <li>
+                    <a href="#">대표번호 : 080-734-1111</a>
+                </li>
+                <li>이메일 : club.korea@nespresso.com</li>
+                <li>주소 : 서울시 서대문구 충정로70 웨스트게이트타워 16층</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/650017f151.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="/portfolio/nespresso/js/nespresso_pc.js"></script>
+</body>
+
+</html>
