@@ -44,9 +44,11 @@ HTML5, CSS3을 이용한 퍼블리싱 수업 수강 과정에서 처음 진행�
 
 ## 🖼️ 디바이스별 반응형 UI
 
-![image](https://github.com/user-attachments/assets/ce7a3401-312c-4a5c-bc8f-6841d8249194) | ![image](https://github.com/user-attachments/assets/26b0d14c-6111-4108-9a9a-50ed6729b2ef) | ![image](https://github.com/user-attachments/assets/6757a655-d0eb-47aa-bf48-91b3a711486e)
---- | --- | --- |
-
+<p style="display: flex; align-items: flex-start;">
+  <img src="https://github.com/user-attachments/assets/ce7a3401-312c-4a5c-bc8f-6841d8249194" alt="image1" width="33%" align="top">
+  <img src="https://github.com/user-attachments/assets/26b0d14c-6111-4108-9a9a-50ed6729b2ef" alt="image2" width="33%" align="top">
+  <img src="https://github.com/user-attachments/assets/6757a655-d0eb-47aa-bf48-91b3a711486e" alt="image3" width="33%" align="top">
+</p>
 
 
 
